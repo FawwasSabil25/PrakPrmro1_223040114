@@ -1,10 +1,10 @@
 package Pertemuan4;
 
-public class StrukturList {
+public class StrukturListDouble {
     private Node HEAD;
 	
-	//add head (menambahkan node di awal list)
-	public void addHead(int data) {
+	//add head
+	public void addHead(double data) { //int digantikan menjadi double
 		Node newNode = new Node(data);
 		
 		if(isEmpty()) {
@@ -15,8 +15,8 @@ public class StrukturList {
 		}
 	}
 	
-	//add mid (menyelipkan node di tengah tengah list)
-	public void addMid(int data, int position) {
+	//add mid
+	public void addMid(double data, int position) { //int digantikan menjadi double
 		Node newNode = new Node(data);
 		Node curNode = null;
 		Node posNode = null;
@@ -42,8 +42,8 @@ public class StrukturList {
 		}
 	}
 	
-	//add tail (menambahkan node di akhir list)
-	public void addTail(int data) {
+	//add tail
+	public void addTail(double data) { //int digantikan menjadi double
 		Node newNode = new Node(data);
 		
 		if (isEmpty()) {
@@ -61,11 +61,14 @@ public class StrukturList {
 		}
 	}
 	
+	
+	
 	private boolean isEmpty() {
 		return HEAD == null;
 	}
 	
-	public void displayElement() { //untuk menampilkan hasil ke layar
+	//latihan 3
+	public void displayElement() {
 		Node curNode = HEAD;
 		
 		while(curNode != null) {
